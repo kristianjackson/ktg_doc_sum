@@ -1,6 +1,8 @@
+azure-cosmos
+beautifulsoup4
+dotenv
 Flask
-bs4
-requests
-selenium
 lxml
 openai
+requests
+selenium
