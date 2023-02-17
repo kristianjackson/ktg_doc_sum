@@ -1,6 +1,5 @@
 azure-cosmos
 beautifulsoup4
-dotenv
 Flask
 lxml
 openai
