@@ -24,15 +24,15 @@ from azure.cosmos import CosmosClient, PartitionKey
 app = Flask(__name__)
 
 # Retrieve the Cosmos DB endpoint and key from environment variables
-COSMOS_ENDPOINT = os.environ.get('ACCOUNT_HOST', 'https://ktg-doc-sum-001.documents.azure.com:443/')
-COSMOS_KEY = os.environ.get('ACCOUNT_KEY', 'peeer3wthvKL3Mqe3bEpNkwdb5tWW6S4UdJ7fyxG9s6OCsFYY9Ylk9EUt8sH6uUbloNjvNYYy8lUACDbqCzkBA==')
+COSMOS_ENDPOINT = os.environ.get('ACCOUNT_HOST')
+COSMOS_KEY = os.environ.get('ACCOUNT_KEY')
 
 # Initialize the Cosmos DB client
 client = CosmosClient(COSMOS_ENDPOINT, COSMOS_KEY)
 
 # Create a new database and container if they don't already exist
-database_name = 'ktg-doc-sum-con-001'
-container_name = 'Items'
+database_name = os.environ.get('DATABASE_NAME')
+container_name = os.environ.get('CONTAINER_NAME')
 database = client.create_database_if_not_exists(id=database_name)
 container = database.create_container_if_not_exists(
     id=container_name,
