@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'ktg-doc-sum-web-001'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_1e1060e3eb34442f9398c8150dcc893d }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_5aac3702a7b2469ba1796e4338b9a14a }}
