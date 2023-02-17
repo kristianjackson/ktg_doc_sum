@@ -1,0 +1,25 @@
+<!doctype html>
+<head>
+    <title>Kearney Document Summary Generator - Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<html>
+   <body>
+     <main>
+        <div class="px-4 py-3 my-2">
+            
+            <a href="{{ url_for('index') }}" class="btn btn-primary btn-lg px-4 gap-3">Back home</a>
+            <br>
+            <div class="fs-5">
+              
+                {% for item in summary %}
+                <div class="fs-6">{{ item }}</div>
+                {% endfor %}
+            
+            </div>
+            
+          </div>
+     </main>      
+   </body>
+</html>

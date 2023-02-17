@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/80e453f4-0772-4cc5-b10d-af0719585714/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/msdocs-python-webapp-quickstart-kpj",
+    "appService.deploySubpath": "."
+}
